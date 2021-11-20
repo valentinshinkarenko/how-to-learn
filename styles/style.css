@@ -10,22 +10,71 @@
 }
 
 .header {
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  align-items: center;
+  padding: 64px;
+  position: relative;
   /* выше установили ограничения для секции */
+}
+.logo {
+background-image: url(../images/logo_place_header.svg);
+width: 183px;
+height: 32px;
+}
+.logo_place_header {
+position: absolute;
+top: 30px;
+}
+
+
+.header__title {
+font-size: 102px; /* размер шрифта*/
+line-height: 96px; /*высота строки*/
+font-weight: bold; /*начертание шрифта*/
+width: 730px; /*ширина*/
+margin: 0;
+position: relative;
+z-index: 3; /*самый верхний элемент который я вижу*/
+}
+.header__subtitle {
+  position: absolute;
+  width: 338px;
+  bottom: 30px;
+  line-height: 25px; /*высота строки*/
+  font-size: 18px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+}
+.header__link {
+color: #2f80ed;
+}
+.header__main-illustration {
+  position: absolute;
+  width: 756px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  z-index: 2; /*второй элемент который я вижу после заголовка*/
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  right: 0;
+  top: 64px;
+  z-index: 1; /*самый нижний элемент, спрятанный за всеми*/
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+/*.table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
+}*/
