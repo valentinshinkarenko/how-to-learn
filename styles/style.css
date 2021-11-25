@@ -220,7 +220,7 @@
   font-weight: normal; /*начертание шрифта*/
   color: #2f80ed;
   position: absolute;
-  top: 50%; /* чтобы ссылка оставалась на середине страницы*/
+  height: 50%; 
   right: 48px;
 }
 
