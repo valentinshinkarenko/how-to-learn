@@ -20,26 +20,28 @@
   position: relative;
   /* выше установили ограничения для секции */
 }
+
 .logo {
-background-image: url(../images/logo_place_header.svg);
-width: 183px;
-height: 32px;
-}
-.logo_place_header {
-position: absolute;
-top: 30px;
+  background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
 }
 
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+}
 
 .header__title {
-font-size: 102px; /* размер шрифта*/
-line-height: 96px; /*высота строки*/
-font-weight: bold; /*начертание шрифта*/
-width: 730px; /*ширина*/
-margin: 0;
-position: relative;
-z-index: 3; /*самый верхний элемент который я вижу*/
+  font-size: 102px; /* размер шрифта*/
+  line-height: 96px; /*высота строки*/
+  font-weight: bold; /*начертание шрифта*/
+  width: 730px; /*ширина*/
+  margin: 0;
+  position: relative;
+  z-index: 3; /*самый верхний элемент который я вижу*/
 }
+
 .header__subtitle {
   position: absolute;
   width: 338px;
@@ -48,9 +50,11 @@ z-index: 3; /*самый верхний элемент который я виж�
   font-size: 18px; /* размер шрифта*/
   font-weight: normal; /*начертание шрифта*/
 }
+
 .header__link {
-color: #2f80ed;
+  color: #2f80ed;
 }
+
 .header__main-illustration {
   position: absolute;
   width: 756px;
@@ -71,10 +75,293 @@ color: #2f80ed;
   z-index: 1; /*самый нижний элемент, спрятанный за всеми*/
 }
 
+.description {
+  margin-top: 100px;
+}
+.two-columns {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  padding-left: 0;
+}
+
+.two-columns__brief {
+  list-style-type:none;
+  margin-top: 0;
+  width: 175px;
+  margin-left: 0;
+}
+
+.two-columns__brief_text {
+  margin-top: 0;
+  line-height: 1.2; /*высота строки*/
+  font-size: 18px; /* размер шрифта*/
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text{
+  width: 80%;
+  list-style-type:none;
+}
+
+.two-columns__paragraph {
+  min-width: 784px;
+  margin-top: 0;
+  line-height: 34px;
+  font-size: 24px; /* размер шрифта*/
+  font-weight: normal;
+}
+
+.two-columns__paragraph_one{
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph_three{
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px; /* размер шрифта*/
+  font-weight: bold;
+}
+
+.digits {
+ margin-top: 100px;
+}
+
+.section-title{
+  text-align: center;
+  margin: 0;
+  line-height: 1.15; /*высота строки*/
+  font-size: 60px; /* размер шрифта*/
+  font-weight: bold; /*начертание шрифта*/
+}
+
+.section-subtitle {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 34px; /*высота строки*/
+  font-size: 24px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+}
+
+.table{
+  display: flex;
+  width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.table__cell {
+  list-style-type:none;
+  width: 250px;
+}
+
+.bottom_row {
+  margin-top: 60px;
+}
+
+.table__heading {
+  line-height: 1.15; /*высота строки*/
+  font-size: 24px; /* размер шрифта*/
+  font-weight: bold; /*начертание шрифта*/
+  margin-top: 0;
+}
+
+.table__text {
+  line-height: 1.2; /*высота строки*/
+  font-size: 18px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+  margin-top: 20px;
+}
+
+.table__text_second-paragraph {
+  margin-bottom: 0;
+}
+
+.feynman {
+  margin-top: 100px;
+  background-color: #f2f2f2;
+  height: 890px;
+  position: relative;
+}
+
+.feynman__title {
+  position: relative;
+  margin: 0 auto 0;
+  padding-top: 100px;
+  line-height: 1.15; /*высота строки*/
+  font-size: 120px; /* размер шрифта*/
+  font-weight: bold; /*начертание шрифта*/
+  width: 648px;
+  text-align: center;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  position: relative;
+  margin-top: 70px;
+  text-align: center;
+  line-height: 51px; /*высота строки*/
+  font-size: 36px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+  z-index: 3;
+}
+
+.feynman__link {
+  line-height: 51px; /*высота строки*/
+  font-size: 36px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+  color: #2f80ed;
+  position: absolute;
+  top: 50%; /* чтобы ссылка оставалась на середине страницы*/
+  right: 48px;
+}
+
+.feynman__main-illustration {
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.section-title_theme_dark {
+  color: white;
+  padding-top: 90px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.table_theme_dark {
+  position: relative;
+  margin-top: 80px;
+  z-index: 2;
+  margin-bottom: 90px;
+}
+
 /* и элемента с модификатором вида ключ-значение */
-/*.table__cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+
+.table__text_theme_dark {
+  color: white;
+  margin-bottom: 0;
+}
+
+.bottom_row_theme_dark {
   margin-top: 80px;
-}*/
+}
+
+.kaufman__triangle-pic {
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  top: 0;
+  right: -210px;
+  z-index: 1;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  color: white;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  top: 60px;
+  bottom: 40px;
+}
+
+.footer__columns_copyright {
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  line-height: 25px; /*высота строки*/
+  font-size: 18px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+  margin: 18px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__columns_info {
+  margin-bottom: 16px;
+}
+
+.footer__column-heading {
+  line-height: 30px; /*высота строки*/
+  font-size: 18px; /* размер шрифта*/
+  font-weight: bold; /*начертание шрифта*/
+  margin: 0 0 20px 0;
+}
+
+.footer__column-heading_social {
+padding-left: 40px; /* подвинул на стандарнтую величину отступа li */
+}
+
+.footer__column-links {
+  line-height: 30px; /*высота строки*/
+  font-size: 18px; /* размер шрифта*/
+  font-weight: normal; /*начертание шрифта*/
+  padding: 0;
+  list-style-type: none;
+  color: white;
+}
+
+.footer__columns_social {
+  margin-bottom: 16px;
+}
+
+.footer__social-links {
+  font-size: 18px;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+.footer__social_icon {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+
+
+
