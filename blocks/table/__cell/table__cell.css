@@ -1,0 +1,8 @@
+.table__cell {
+  list-style-type:none;
+  width: 250px;
+}
+
+.table__cell:not(:nth-last-child(-n+4)) {
+  margin-bottom: 60px;
+}
