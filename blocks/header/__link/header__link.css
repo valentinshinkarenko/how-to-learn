@@ -3,6 +3,7 @@
   text-decoration: none;
 }
 .header__link:hover {
-  color: aqua;
   cursor: pointer;
+  transition: .5s;
+  opacity: 0.5;
 }
