@@ -4,6 +4,7 @@
   font-size: 30px;
   line-height: 42px;
   font-weight: normal;
+  height: 100%;
 }
 .khan__buy-link:hover {
   cursor: pointer;
